@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speakers</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/input.css" />
+    <link rel="stylesheet" href="../css/speakers.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-[#011723] fixed w-screen z-50">
+      <div class="pt-2 max-w-full px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-24 items-center justify-between">
+          <div
+            class="absolute inset-y-0 top-0 right-0 justify-between flex items-center lg:hidden"
+          >
+            <!-- Mobile menu button -->
+            <button
+              id="menu-button"
+              type="button"
+              class="relative inline-flex items-center text-base justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <!-- Menu closed icon -->
+              <svg
+                id="menu-icon-open"
+                class="block h-10 w-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!-- Menu open icon -->
+              <svg
+                id="menu-icon-close"
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center md:justify-between sm:items-stretch"
+          >
+            <div class="flex shrink-0 items-center">
+              <img
+                class="h-24 w-auto"
+                src="../images/Logo.png"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden sm:ml-6 lg:block">
+              <div class="flex h-full justify-between items-center space-x-4">
+                <a
+                  href="../../index.html"
+                  class="rounded-md bg-[#011723] px-3 py-2 text-lg font-medium text-white"
+                  >Home</a
+                >
+                <a
+                  href="./speakers.html"
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Speakers</a
+                >
+                <a
+                  href="./agenda.html "
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Agenda</a
+                >
+                <a
+                  href="./team.html"
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Team</a
+                >
+                <a
+                  href="./conduct.html"
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Conduct</a
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="lg:inline-block hidden rounded-full font-bold bg-primary bg-white text-black px-10 text-base h-14 mt-4 uppercase leading-normal shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            >
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfy7goLlZt_gGL8h6_Z__V7CT3X3OjXm8jmuTPeQpHgxvcdtQ/viewform"
+              >
+                Join Us
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a
+            href="../../index.html"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            >Home</a
+          >
+          <a
+            href="./speakers.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Speaker</a
+          >
+          <a
+            href="./agenda.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Agenda</a
+          >
+          <a
+            href="./team.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="./conduct.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Conduct</a
+          >
+          <button
+            type="button"
+            class="rounded-full font-bold bg-primary bg-white text-black px-10 text-base h-14 mt-4 uppercase leading-normal shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          >
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfy7goLlZt_gGL8h6_Z__V7CT3X3OjXm8jmuTPeQpHgxvcdtQ/viewform"
+            >
+              Join Us
+            </a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="TopSection">
+      <h1>Speakers</h1>
+    </div>
+    <div id="SpeakersBox">
+      <div id="TeamBox">
+        <div id="TeamHead">
+          <h2>Bug Bounty Village</h2>
+          <h1>Speakers</h1>
+        </div>
+        <div
+          id="TeamMemberBox"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:grid-cols-4 grid-cols-1 px-5"
+        >
+          <div class="cards">
+            <img src="../images/Mohammad Arif.jpg" alt="">
+            <div class="cardName">Mohammad Arif</div>
+          </div>
+          <div class="cards">
+            <img src="../images/Abhishek BV.jpeg" alt="">
+            <div class="cardName">Abhishek BV</div>
+          </div>
+          <div class="cards">
+            <img src="../images/Gaurav Joshi.jpg" alt="">
+            <div class="cardName">Gaurav Joshi</div>
+          </div>
+          <div class="cards">
+            <img src="../images/Ratnakar Singh.jpeg" alt="">
+            <div class="cardName">Ratnakar Singh</div>
+          </div>
+          <div class="cards">
+            <img src="../images/Agnibha Dutta.jpeg" alt="">
+            <div class="cardName">Agnibha Dutta</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-full px-4 bg-[#011723]">
+      <div class="mx-auto max-w-7xl">
+        <!--Grid-->
+        <div class="grid md:grid-cols-2 gap-8 py-10">
+          <div
+            class="mb-10 col-span-1 lg:mb-0 flex items-center md:items-start flex-col"
+          >
+            <a class="flex h-32 w-32 justify-center lg:justify-start">
+              <img src="../images/Logo.png" alt="" />
+            </a>
+            <div
+              class="flex items-center justify-between w-full max-w-xl mx-auto flex-col 2xl:flex-col md:items-start"
+            >
+              <p
+                class="py-2 text-sm text-white font-light lg:max-w-xs text-center md:text-left"
+              >
+                Join us at Seasides Conference, India's Most Loved Conference
+                for the<br />Cloud Security Village, Feb 20-22 2025.<br />Official
+                Village in affiliation with Seasides Conference.
+              </p>
+            </div>
+          </div>
+          <!--End Col-->
+          <div class="lg:mx-auto pt-5 text-left">
+            <h4 class="text-3xl text-white font-medium mb-7">Contact Us</h4>
+            <ul class="text-sm transition-all duration-500">
+              <li class="mb-6">
+                <a class="text-white text-2xl hover:text-white"
+                  >support[at]seasidestech.com</a
+                >
+              </li>
+            </ul>
+            <div class="flex mt-4 space-x-4 justify-start lg:mt-0">
+              <a
+                href="https://x.com/seasides_conf"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-twitter-x-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/seasides_conf/"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-instagram-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/seasides/"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-linkedin-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@seasidesgoa"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-youtube-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/seasidesconference"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-facebook-box-fill text-white text-lg"></i>
+              </a>
+            </div>
+          </div>
+          <!--End Col-->
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

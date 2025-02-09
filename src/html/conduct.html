@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code of Conduct</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/input.css" />
+    <link rel="stylesheet" href="../css/conduct.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-[#011723] fixed w-screen z-50">
+      <div class="pt-2 max-w-full px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-24 items-center justify-between">
+          <div
+            class="absolute inset-y-0 top-0 right-0 justify-between flex items-center lg:hidden"
+          >
+            <!-- Mobile menu button -->
+            <button
+              id="menu-button"
+              type="button"
+              class="relative inline-flex items-center text-base justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <!-- Menu closed icon -->
+              <svg
+                id="menu-icon-open"
+                class="block h-10 w-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!-- Menu open icon -->
+              <svg
+                id="menu-icon-close"
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center md:justify-between sm:items-stretch"
+          >
+            <div class="flex shrink-0 items-center">
+              <img
+                class="h-24 w-auto"
+                src="../images/Logo.png"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden sm:ml-6 lg:block">
+              <div class="flex h-full justify-between items-center space-x-4">
+                <a
+                  href="../../index.html"
+                  class="rounded-md bg-[#011723] px-3 py-2 text-lg font-medium text-white"
+                  >Home</a
+                >
+                <a
+                  href="./speakers.html"
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Speakers</a
+                >
+                <a
+                  href="./agenda.html "
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Agenda</a
+                >
+                <a
+                  href="./team.html"
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Team</a
+                >
+                <a
+                  href="./conduct.html"
+                  class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Conduct</a
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="lg:inline-block hidden rounded-full font-bold bg-primary bg-white text-black px-10 text-base h-14 mt-4 uppercase leading-normal shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            >
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfy7goLlZt_gGL8h6_Z__V7CT3X3OjXm8jmuTPeQpHgxvcdtQ/viewform"
+              >
+                Join Us
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a
+            href="../../index.html"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            >Home</a
+          >
+          <a
+            href="./speakers.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Speaker</a
+          >
+          <a
+            href="./agenda.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Agenda</a
+          >
+          <a
+            href="./team.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="./conduct.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Conduct</a
+          >
+          <button
+            type="button"
+            class="rounded-full font-bold bg-primary bg-white text-black px-10 text-base h-14 mt-4 uppercase leading-normal shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          >
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfy7goLlZt_gGL8h6_Z__V7CT3X3OjXm8jmuTPeQpHgxvcdtQ/viewform"
+            >
+              Join Us
+            </a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="TopSection" class="pt-20">
+      <h1>Code of Conduct</h1>
+    </div>
+    <div id="CodBox">
+      <div id="Cod" class="xl:px-24 md:px-20 px-5 py-7">
+        <h3 class="text-2xl font-semibold">
+          Welcome to the Cloud Village at the Seasides Security Conference! We
+          are dedicated to fostering a safe, inclusive, and respectful
+          environment for all participants. This Code of Conduct outlines our
+          expectations for behavior and the consequences for unacceptable
+          actions.
+        </h3>
+        <h2 class="text-3xl font-bold pt-5">1. Purpose</h2>
+        <p class="pt-4 text-xl font-medium">
+          The Cloud Village aims to create a collaborative space for individuals
+          interested in cloud security, ethical hacking, and responsible
+          disclosure. We encourage attendees to engage, learn, and contribute
+          positively to the community.
+        </p>
+        <h2 class="text-3xl font-bold pt-5">2. Expected Behavior</h2>
+        <ul class="text-xl pt-4 flex flex-col gap-2">
+          <li>
+            <b>Respect for All:</b> Treat all participants with respect and
+            consideration, valuing diverse perspectives and backgrounds .
+          </li>
+          <li>
+            <b>Collaboration:</b> Engage in supportive communication and work
+            together to enhance learning experiences.
+          </li>
+          <li>
+            <b>Inclusivity:</b> Foster an inclusive atmosphere that welcomes
+            individuals from all backgrounds and skill levels.
+          </li>
+          <li>
+            <b>Constructive Engagement:</b> Focus on critiquing ideas rather
+            than individuals. Provide constructive feedback and graciously
+            accept criticism.
+          </li>
+          <li>
+            <b>Responsible Ethical Conduct:</b> Adhere to ethical hacking
+            practices and respect the rules of the Cloud Village and the
+            Seasides Security Conference.
+          </li>
+        </ul>
+        <h2 class="text-3xl font-bold pt-5">3. Unacceptable Behavior</h2>
+        <p class="pt-4 text-xl font-medium">Unacceptable behaviors include, but are not limited to:</p>
+        <ul class="text-xl pt-4 flex flex-col gap-2">
+          <li>
+            <b>Harassment and Discrimination:</b> Intimidating, harassing,
+            abusive, discriminatory, or derogatory conduct towards any
+            individual or group.
+          </li>
+          <li>
+            <b>Disruption:</b> Disrupting presentations, discussions, or other
+            events.
+          </li>
+          <li>
+            <b>Inappropriate Content:</b> Displaying sexually explicit or
+            violent material.
+          </li>
+          <li>
+            <b>Illegal Activities:</b> Engaging in or promoting illegal
+            behavior, including unauthorized hacking.
+          </li>
+        </ul>
+        <h2 class="text-3xl font-bold pt-5">4. Consequences of Unacceptable Behavior</h2>
+        <p class="pt-4 text-xl font-medium">
+          Unacceptable behavior will not be tolerated. Individuals asked to
+          cease such behavior are expected to comply immediately. Consequences
+          for violations may include:
+        </p>
+        <ul class="text-xl pt-4 flex flex-col gap-2">
+          <li>
+            <b>Removal from the Village:</b> Participants may be expelled from
+            the Cloud Village at the discretion of the organizers.
+          </li>
+          <li>
+            <b>Banning from Virtual Communities:</b> Offenders may be prohibited
+            from attending future events or participating in related online
+            communities.
+          </li>
+          <li>
+            <b>Banning from Virtual Communities:</b> Serious breaches will be
+            escalated to the Seasides Conference organizers and, if necessary,
+            reported to law enforcement.
+          </li>
+        </ul>
+        <h2 class="text-3xl font-bold pt-5">5. Reporting Guidelines</h2>
+        <p class="pt-4 text-xl font-medium">
+          If you experience or witness unacceptable behavior, or have any
+          concerns, please notify a Cloud Village organizer as soon as possible.
+          Organizers can be identified by their badges and will be trained to
+          address and report incidents effectively.
+        </p>
+        <h2 class="text-3xl font-bold pt-5">6. Scope</h2>
+        <p class="pt-4 text-xl font-medium">
+          This Code of Conduct applies to all participants at the Cloud Village,
+          including attendees, volunteers, organizers, and anyone with an
+          official role. It also extends to related social events and digital
+          spaces associated with the Village.
+        </p>
+        <h2 class="text-3xl font-bold pt-5">7. Liability of Information Disclosure</h2>
+        <p class="pt-4 text-xl font-medium">
+          All discussions, presentations, and content shared within the Cloud
+          Village are the responsibility of the individual presenters. Each
+          presenter must ensure they have followed appropriate responsible
+          disclosure processes and obtained necessary consents for any
+          information shared. The Cloud Village organizers and Seasides
+          Conference are not liable for unauthorized disclosures by presenters.
+        </p>
+        <h2 class="text-3xl font-bold pt-5">8. Contact Information</h2>
+        <p class="pt-4 text-xl font-medium">
+          For questions or to report a violation of this Code of Conduct, please
+          contact us at support[at]seasidestech.com.
+        </p>
+        <h2 class="text-3xl font-bold pt-5">9. General Courtesy</h2>
+        <p class="pt-4 text-xl font-medium">
+          The spirit of the Cloud Village is rooted in community and innovation.
+          Let’s maintain positive and professional interactions — be kind and
+          respectful. Together, we can create a welcoming environment that
+          ensures the Seasides Conference remains a place for everyone.
+        </p>
+        <h2 class="text-3xl font-bold pt-5">10. License and Attribution</h2>
+        <p class="pt-4 text-xl font-medium">
+          This Code of Conduct is adapted from various recognized sources to fit
+          the specific needs of the Cloud Village at the Seasides Security
+          Conference.
+        </p>
+      </div>
+    </div>
+    <footer class="w-full px-4 bg-[#011723]">
+      <div class="mx-auto max-w-7xl">
+        <!--Grid-->
+        <div class="grid md:grid-cols-2 gap-8 py-10">
+          <div
+            class="mb-10 col-span-1 lg:mb-0 flex items-center md:items-start flex-col"
+          >
+            <a class="flex h-32 w-32 justify-center lg:justify-start">
+              <img src="../images/Logo.png" alt="" />
+            </a>
+            <div
+              class="flex items-center justify-between w-full max-w-xl mx-auto flex-col 2xl:flex-col md:items-start"
+            >
+              <p
+                class="py-2 text-sm text-white font-light lg:max-w-xs text-center md:text-left"
+              >
+                Join us at Seasides Conference, India's Most Loved Conference
+                for the<br />Cloud Security Village, Feb 20-22 2025.<br />Official
+                Village in affiliation with Seasides Conference.
+              </p>
+            </div>
+          </div>
+          <!--End Col-->
+          <div class="lg:mx-auto pt-5 text-left">
+            <h4 class="text-3xl text-white font-medium mb-7">Contact Us</h4>
+            <ul class="text-sm transition-all duration-500">
+              <li class="mb-6">
+                <a class="text-white text-2xl hover:text-white"
+                  >support[at]seasidestech.com</a
+                >
+              </li>
+            </ul>
+            <div class="flex mt-4 space-x-4 justify-start lg:mt-0">
+              <a
+                href="https://x.com/seasides_conf"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-twitter-x-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/seasides_conf/"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-instagram-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/seasides/"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-linkedin-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@seasidesgoa"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-youtube-fill text-white text-lg"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/seasidesconference"
+                class="w-10 h-10 rounded-full bg-gray-700 flex justify-center items-center hover:bg-blue-900"
+              >
+                <i class="ri-facebook-box-fill text-white text-lg"></i>
+              </a>
+            </div>
+          </div>
+          <!--End Col-->
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
